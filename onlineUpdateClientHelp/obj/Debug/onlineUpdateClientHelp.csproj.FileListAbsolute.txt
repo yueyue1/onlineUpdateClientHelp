@@ -1,1 +1,9 @@
 F:\Book6\chapter6\onlineUpdateClientHelp\onlineUpdateClientHelp\bin\Debug\onlineUpdateClientHelp.exe.config
+F:\Book6\chapter6\onlineUpdateClientHelp\onlineUpdateClientHelp\bin\Debug\onlineUpdateClientHelp.exe
+F:\Book6\chapter6\onlineUpdateClientHelp\onlineUpdateClientHelp\bin\Debug\onlineUpdateClientHelp.pdb
+F:\Book6\chapter6\onlineUpdateClientHelp\onlineUpdateClientHelp\obj\Debug\onlineUpdateClientHelp.csprojResolveAssemblyReference.cache
+F:\Book6\chapter6\onlineUpdateClientHelp\onlineUpdateClientHelp\obj\Debug\onlineUpdateClientHelp.Form1.resources
+F:\Book6\chapter6\onlineUpdateClientHelp\onlineUpdateClientHelp\obj\Debug\onlineUpdateClientHelp.Properties.Resources.resources
+F:\Book6\chapter6\onlineUpdateClientHelp\onlineUpdateClientHelp\obj\Debug\onlineUpdateClientHelp.csproj.GenerateResource.Cache
+F:\Book6\chapter6\onlineUpdateClientHelp\onlineUpdateClientHelp\obj\Debug\onlineUpdateClientHelp.exe
+F:\Book6\chapter6\onlineUpdateClientHelp\onlineUpdateClientHelp\obj\Debug\onlineUpdateClientHelp.pdb
