@@ -1,0 +1,51 @@
+****************************异常文本****************************
+【出现时间】：2016/10/4 20:42:53
+【异常类型】：InvalidOperationException
+【异常信息】：集合在枚举数实例化后进行了修改。
+【堆栈调用】：   在 System.Collections.Specialized.ListDictionary.NodeEnumerator.MoveNext()
+   在 System.Windows.Forms.Layout.DefaultLayout.ApplyCachedBounds(IArrangedElement container)
+   在 System.Windows.Forms.Layout.DefaultLayout.xLayout(IArrangedElement container, Boolean measureOnly, Size& preferredSize)
+   在 System.Windows.Forms.Layout.DefaultLayout.LayoutCore(IArrangedElement container, LayoutEventArgs args)
+   在 System.Windows.Forms.Layout.LayoutEngine.Layout(Object container, LayoutEventArgs layoutEventArgs)
+   在 System.Windows.Forms.Control.OnLayout(LayoutEventArgs levent)
+   在 System.Windows.Forms.ScrollableControl.OnLayout(LayoutEventArgs levent)
+   在 System.Windows.Forms.Form.OnLayout(LayoutEventArgs levent)
+   在 System.Windows.Forms.Control.PerformLayout(LayoutEventArgs args)
+   在 System.Windows.Forms.Control.System.Windows.Forms.Layout.IArrangedElement.PerformLayout(IArrangedElement affectedElement, String affectedProperty)
+   在 System.Windows.Forms.Layout.LayoutTransaction.DoLayout(IArrangedElement elementToLayout, IArrangedElement elementCausingLayout, String property)
+   在 System.Windows.Forms.Control.SetBounds(Int32 x, Int32 y, Int32 width, Int32 height, BoundsSpecified specified)
+   在 System.Windows.Forms.Control.set_Size(Size value)
+   在 System.Windows.Forms.Label.AdjustSize()
+   在 System.Windows.Forms.Label.OnTextChanged(EventArgs e)
+   在 System.Windows.Forms.Control.set_Text(String value)
+   在 System.Windows.Forms.Label.set_Text(String value)
+   在 WindowsFormsApplication1.Form1.standard_h264(FileStream fs) 位置 d:\时刻播放器\时刻播放器(2016年8月12日)\WindowsFormsApplication1\WindowsFormsApplication1\Form1.cs:行号 660
+【异常方法】：Boolean MoveNext()
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2016/10/4 20:43:05
+【异常类型】：ObjectDisposedException
+【异常信息】：无法访问已释放的对象。
+对象名:“PictureBox”。
+【堆栈调用】：   在 System.Windows.Forms.Control.CreateHandle()
+   在 System.Windows.Forms.Control.get_Handle()
+   在 System.Windows.Forms.Control.CreateGraphicsInternal()
+   在 System.Windows.Forms.Control.CreateGraphics()
+   在 WindowsFormsApplication1.Form1.X264Decoder_Decode(Int64 dwHandle, IntPtr pDataIn, UInt32 nSize, Int32& nWidth, Int32& nHeight)
+【异常方法】：Void CreateHandle()
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2016/10/4 20:43:05
+【异常类型】：ObjectDisposedException
+【异常信息】：无法访问已释放的对象。
+对象名:“PictureBox”。
+【堆栈调用】：   在 System.Windows.Forms.Control.CreateHandle()
+   在 System.Windows.Forms.Control.get_Handle()
+   在 System.Windows.Forms.Control.CreateGraphicsInternal()
+   在 System.Windows.Forms.Control.CreateGraphics()
+   在 WindowsFormsApplication1.Form1.X264Decoder_Decode(Int64 dwHandle, IntPtr pDataIn, UInt32 nSize, Int32& nWidth, Int32& nHeight)
+【异常方法】：Void CreateHandle()
+***************************************************************
+
