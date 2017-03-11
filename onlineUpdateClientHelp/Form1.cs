@@ -29,8 +29,8 @@ namespace onlineUpdateClientHelp
         Socket clientSocket;
         class FileInformation
         {
-            public byte[] fileName;
-            public byte[] fileData;
+            public string fileName;
+            public string fileData;
         }
         List<byte> msg_recebyte = new List<byte>();
         public Form1()
@@ -175,6 +175,8 @@ namespace onlineUpdateClientHelp
                 //MessageBox.Show("服务器关闭");
             }
         }
+        //找到parttern在s中开始的位置
+        //-1是没有在s中找到
         public static int IndexOf(byte[] s, byte[] pattern)
         {
             int slen = s.Length;
@@ -204,7 +206,9 @@ namespace onlineUpdateClientHelp
 
                         if (IndexOf(recebyte, first) == 0 && IndexOf(recebyte, last) != -1)
                         {
+                            //把得到的数据转成字符串
                             string msg = Encoding.Default.GetString(recebyte);
+                            //去掉头尾
                             msg = msg.Remove(0, 7);
                             msg = msg.Remove(msg.Length - 7);
                           
@@ -212,12 +216,16 @@ namespace onlineUpdateClientHelp
                             JavaScriptSerializer jsser = new JavaScriptSerializer();
                             jsser.MaxJsonLength = Int32.MaxValue;
                             FileInformation fileReceive = jsser.Deserialize<FileInformation>(msg);
+                            //得到文件数据
+                            byte[] data = Convert.FromBase64String(fileReceive.fileData);
 
                             using (FileStream filesream = new FileStream(Application.ExecutablePath + @"\..\UpdateFile\" +
-                                Encoding.Default.GetString(fileReceive.fileName), FileMode.Create, FileAccess.Write))
+                                fileReceive.fileName, FileMode.Create, FileAccess.Write))
                             {
-                                filesream.Write(fileReceive.fileData, 0, fileReceive.fileData.Length);
-                            }                            
+                                filesream.Write(data, 0, data.Length);
+                            }   
+                            msg_recebyte.RemoveRange(0, msg_recebyte.Count);
+                            MessageBox.Show("接收成功！");
                         }
                         else
                         {
@@ -235,6 +243,7 @@ namespace onlineUpdateClientHelp
                                 }
                             }
                         }
+                        
                     }
                 }
                 Thread.Sleep(1000);
